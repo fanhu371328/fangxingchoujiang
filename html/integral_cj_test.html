@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>幸运大抽奖</title>
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="telephone=no" name="format-detection">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="../css/mobile.common.css" />
+		<link rel="stylesheet" href="../css/integral_cj.css?t=2017102012" />
+		<script src="../js/jquery-2.1.4.min.js" type="text/javascript" charset="utf-8"></script>		
+		
+		<script type="text/javascript">
+			$('html').append('<img src="../img/load.gif" class="loading" style="z-index:999;display:block">');
+			window.onload = function() {
+				fn();
+				function fn() {
+					var w = window.innerWidth / 3.75;
+					var html = document.querySelector("html");
+					html.style.fontSize = w + "px";
+				}
+				window.onresize = fn;
+			}
+		</script>
+	</head>
+
+	<body style="display: none;">
+		<div class="content">
+			<div class="top_img">
+				<img src="../img/beijingshang.png"/>
+			</div>
+			
+			<div id="luck"><!-- luck -->
+				<table class="table">
+					<tr>
+						<td class="luck-unit luck-unit-0 active"><img src="../img/1.png"></td>
+						<td class="luck-unit luck-unit-1"><img src="../img/2.png"></td>
+						<td class="luck-unit luck-unit-2"><img src="../img/4.png"></td>
+						<td class="luck-unit luck-unit-3"><img src="../img/7.png"></td>
+					</tr>
+					<tr>
+						<td class="luck-unit luck-unit-9"><img src="../img/3.png"></td>
+						<td rowspan="1" colspan="2" class="cjBtn" id="btn"><span>剩余3次</span></td>
+						<td class="luck-unit luck-unit-4"><img src="../img/3.png"></td>
+					</tr>
+					<tr>
+						<td class="luck-unit luck-unit-8"><img src="../img/6.png"></td>
+						<td class="luck-unit luck-unit-7"><img src="../img/9.png"></td>
+						<td class="luck-unit luck-unit-6"><img src="../img/8.png"></td>
+						<td class="luck-unit luck-unit-5"><img src="../img/5.png"></td>
+					</tr>
+				</table>
+				
+				<span class="jifen">当前积分：<span>15</span></span>
+			</div><!-- luckEnd -->
+			<div class="guize">
+				<p class="title">中奖规则</p>
+				<ul>
+					<li class="clearfix">
+						<span>1、</span>
+						<p>每日抽奖次数：3次。</p>
+					</li>
+					<li class="clearfix">
+						<span>2、</span>
+						<p>每次抽奖消耗积分：5积分。</p>
+					</li>
+					<li class="clearfix">
+						<span>3、</span>
+						<p>当天提问/回答问题可增加一次抽奖机会，每人每天仅有一次增加机会。</p>
+					</li>
+					<li class="clearfix">
+						<span>4、</span>
+						<p>抽中积分系统自动奖励，红包和实物奖励是抽奖后7个工作日安排兑奖，请耐心等待。</p>
+					</li>
+					<li class="clearfix">
+						<span>5、</span>
+						<p>红包和实物兑奖方式：加XXX(微信号:XXXX),备注“转盘抽奖+用户名”。</p>
+					</li>
+				</ul>
+			</div>
+			
+			<!--弹窗-->
+			<div class="tanchuang hidden">
+				<div class="tanchuang_inner">
+					<p class="tips"></p>
+					<button class="sure">知道了</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	
+	<script src="../js/integral_cj.js?t=20171015"></script>
+</html>

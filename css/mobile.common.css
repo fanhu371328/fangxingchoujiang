@@ -1,0 +1,411 @@
+@charset "utf-8";
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "黑体", "黑体-简", "STHeiti", "Microsoft Yahei"
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    font-family: "黑体", "黑体-简", "STHeiti", "Microsoft Yahei"
+}
+
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1 {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    outline: 0
+}
+
+a:hover {
+    text-decoration: none;
+    outline: 0
+}
+
+a:active {
+    outline: 0;
+}
+
+*:focus {
+    outline: 0;
+}
+
+.zoom {
+    overflow: hidden
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block
+}
+
+audio,
+canvas,
+video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+address {
+    display: block
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%
+}
+
+a:focus {
+    outline: thin dotted
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0
+}
+
+abbr[title] {
+    border-bottom: 1px dotted
+}
+
+b,
+strong {
+    font-weight: bold
+}
+
+dfn {
+    font-size: italic
+}
+
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0
+}
+
+mark {
+    background: #ff0;
+    color: #000
+}
+
+code,
+kbd,
+pre,
+samp {
+    font-family: monospace, serif;
+    font-size: 1em
+}
+
+pre {
+    white-space: pre-wrap
+}
+
+q {
+    quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: ""
+}
+
+small {
+    font-size: 80%
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -0.5em
+}
+
+sub {
+    bottom: -0.25em
+}
+
+small {
+    font-size: 85%
+}
+
+em {
+    font-style: normal
+}
+
+cite {
+    font-style: normal
+}
+
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+    padding: 0;
+    margin: 0;
+    list-style: none
+}
+
+img {
+    border: 0
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+figure {
+    margin: 0
+}
+
+fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: .35em .625em .75em
+}
+
+legend {
+    border: 0;
+    padding: 0
+}
+
+::-webkit-input-placeholder {
+    color: #bbb;
+    text-overflow: ellipsis
+}
+
+:-moz-placeholder {
+    color: #bbb;
+    text-overflow: ellipsis
+}
+
+::-moz-placeholder {
+    color: #bbb;
+    text-overflow: ellipsis
+}
+
+:-ms-input-placeholder {
+    color: #bbb;
+    text-overflow: ellipsis
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    outline: 0;
+    color: inherit;
+    padding: 0;
+   /* -webkit-appearance: none*/
+}
+
+button,
+input {
+    line-height: normal
+}
+
+button,
+select {
+    text-transform: none
+}
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+button[disabled],
+html input[disabled] {
+    cursor: default
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0
+}
+
+textarea {
+    overflow: auto;
+    vertical-align: top;
+    -webkit-appearance: none
+}
+
+
+/*IOS下输入框，触发的时候会有一个灰色背景显示*/
+
+input,
+textarea {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0
+}
+
+.clearfix {
+    zoom: 1
+}
+
+@media screen and (max-width:374px) {
+    * {
+        font-size: 16px;
+        line-height: 16px
+    }
+}
+
+@media(min-width:375px) and (max-width:413px) {
+    * {
+        font-size: 18px;
+        line-height: 18px
+    }
+}
+
+@media(min-width:414px) and (max-width:479px) {
+    * {
+        font-size: 20px;
+        line-height: 20px
+    }
+}
+
+@media(min-width:480px) and (max-width:639px) {
+    * {
+        font-size: 24px;
+        line-height: 24px
+    }
+}
+
+@media screen and (min-width:640px) {
+    * {
+        font-size: 32px;
+        line-height: 32px
+    }
+}
+
+/*@media screen and (min-width: 1024px) {
+   html,body {
+        width: 740px;
+        margin: 0 auto;
+    }
+    * {
+        font-size: 24px;
+        line-height: 24px
+    }
+}*/
+
+
+
